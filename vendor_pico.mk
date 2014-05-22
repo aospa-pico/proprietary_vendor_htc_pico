@@ -52,6 +52,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/htc/pico/lib/hw/sensors.pico.so:system/lib/hw/sensors.pico.so
 
+# GPS
+PRODUCT_COPY_FILES += \
+    vendor/htc/pico/lib/librpc.so:system/lib/librpc.so \
+    vendor/htc/pico/lib/hw/gps.msm7x27a.so:system/lib/hw/gps.msm7x27a.so
+
 # 3D(New adreno Blobs)
 PRODUCT_COPY_FILES += \
     vendor/htc/pico/etc/firmware/yamato_pfp.fw:system/etc/firmware/yamato_pfp.fw \
